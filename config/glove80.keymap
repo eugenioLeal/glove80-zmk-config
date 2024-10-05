@@ -42,6 +42,16 @@
 #define KEYS_L 0 1 2 3 4 10 11 12 13 14 15 22 23 24 25 26 27 34 35 36 37 38 39 46 47 48 49 50 51 64 65 66 67 68
 #define KEYS_R 5 6 7 8 9 16 17 18 19 20 21 28 29 30 31 32 33 40 41 42 43 44 45 58 59 60 61 62 63 75 76 77 78 79
 #define THUMBS 69 52 57 74 70 53 56 73 71 54 55 72
+
+&lt {
+        tapping-term-ms = <200>;
+};
+
+&sk {
+        release-after-ms = <2000>;
+        quick-release;
+};
+
 / {
     behaviors {
         // For the "layer" key, it'd nice to be able to use it as either a shift or a toggle.
