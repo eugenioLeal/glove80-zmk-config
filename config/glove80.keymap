@@ -11,7 +11,15 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-#define HYPER LC(LS(LG(LALT)))
+#define XX &none
+#define MEH LG(LA(LCTRL))
+#define HYP LS(LG(LA(LCTRL)))
+#define REM LA(BSPC)
+#define KCUT &kp LG(X)
+#define KCOPY &kp LG(C)
+#define KPASTE &kp LG(V)
+#define KUNDO &kp LG(Z)
+#define KREDO &kp LG(LS(Z))
 
 // layers
 #define DEFAULT 0
