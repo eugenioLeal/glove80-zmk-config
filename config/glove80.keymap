@@ -167,8 +167,8 @@
 &kp F10        &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                     &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
 &kp GRAVE      &kp SQT  &kp COMMA   &kp DOT     &kp P       &kp Y                                                                      &kp F   &kp G   &kp C       &kp R       &kp L       &kp FSLH
 &kp TAB &hml LCTRL A  &hml LALT O &hml LGUI E &hml LSHFT U  &kp I                                                           &kp D   &hmr RSHFT H  &hmr RGUI T   &hmr RALT N   &hmr LCTRL S &kp BSLH
-&kp CAPS       &kp SEMI &kp Q       &kp J       &kp K       &kp X   &kp REM   &kp LBKT    &layer_td    &kp LGUI  &kp RBKT  &sk LSHIFT  &kp B   &kp M   &kp W       &kp V       &kp Z       &kp PG_UP
-&magic MAGIC 0 &kp HOME &kp END     &kp DOWN    &kp UP           &kp BSPC    &kp DEL     &kp LALT   &kp RALT  &kp SPACE   &kp RET            &kp LEFT  &kp RIGHT   &kp HOME    &kp END     &kp PG_DN
+&kp CAPS       &kp SEMI &kp Q       &kp J       &kp K       &kp X   &kp LBKT &kp LPAR &layer_td     &kp HYP   &kp RPAR    &kp RBKT     &kp B   &kp M   &kp W       &kp V       &kp Z       &kp PG_UP
+&magic MAGIC 0 &kp HOME &kp END     &kp DOWN    &kp UP              &kp REM  &kp BSPC &kp DEL       &kp ESC   &kp SPACE   &kp RET             &kp LEFT &kp RIGHT   &kp HOME    &kp END     &kp PG_DN
             >;
         };
 
