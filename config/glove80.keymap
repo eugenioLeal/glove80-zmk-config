@@ -158,9 +158,6 @@
 // | CAPS  |  ;  |  Q  |  J   |  K   |  X   | LBKT  | LPAR  | LOWER | | HYP   | RPAR  | RBKT  |  B   |   M   |   W   |  V   |   Z   | PGUP |
 // | MAGIC | HOME| END | DOWN |  UP  |      | REM   | BSPC  | DEL   | | ESC   | SPACE | RET   |      | LEFT  | RIGHT | HOME |  END  | PGDN |
 // TODO: change home and end in left hand. figure out what to put
-// TODO: add a way to replace f10 key. maybe a combo
-// TODO: change thumb cluster lalt and ralt. figure out what to put
-// TODO: change thumb cluster lgui. figure out what to put
 // TODO: add a insert functionality
             bindings = <
 &kp F1         &kp F2   &kp F3      &kp F4      &kp F5                                                                                         &kp F6  &kp F7      &kp F8      &kp F9      &kp EQUAL
