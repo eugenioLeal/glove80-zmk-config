@@ -14,7 +14,7 @@
 #define XX &none
 #define MEH LG(LA(LCTRL))
 #define HYP LS(LG(LA(LCTRL)))
-#define VOICE LS(LG(LA(LCTRL(S)))) // Needs OS binding for hypr+S for Siri/Cortana/etc
+#define VOICE &kp LC(LS(LA(LG(S)))) // Needs OS binding for hypr+S for Siri/Cortana/etc
 #define REM LA(BSPC)
 #define CLR LG(BSPC)
 #define KCUT &kp LG(X)
@@ -175,7 +175,7 @@
 
         lower_layer {
             bindings = <
-&kp BR_U          &kp BR_D            &kp C_PREV       &kp C_NEXT         &kp C_PP                                                                                                       &kp C_MUTE   &kp VDOWN   &kp VUP   &none  &kp PAUSE_BREAK
+&kp BR_U          &kp BR_D            &kp C_PREV       &kp C_NEXT         &kp C_PP                                                                                                       &kp C_MUTE   &kp VDOWN   &kp VUP   VOICE  &kp PAUSE_BREAK
 &trans            &none               &none           &none           &none           &kp HOME                                                                              &kp LPAR     &kp CLR      &kp EQUAL    &kp FSLH   &kp STAR     &kp PSCRN
 &trans            &none               &none           &kp UP          &none           &kp END                                                                               &kp RPAR     &kp N7       &kp N8       &kp N9     &kp MINUS    &kp SLCK
 &trans            &none               &kp LEFT        &kp DOWN        &kp RIGHT       &kp PG_UP                                                                             &kp PRCNT    &kp N4       &kp N5       &kp N6     &kp PLUS     &none
