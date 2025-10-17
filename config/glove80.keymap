@@ -79,7 +79,7 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
-        hyper_caps: hyper_capslock_hold_tap {
+        hypercaps: hyper_capslock_hold_tap {
             compatible: "zmk,behavior-hold-tap";
             label = "HYPER_CAPSLOCK_HOLD_TAP";
             #binding-cells = <0>;
