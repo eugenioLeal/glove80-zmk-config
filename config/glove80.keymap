@@ -12,6 +12,7 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #define XX &none
+#define YEH LC(LA(LEFT_SHIFT))
 #define MEH LG(LA(LCTRL))
 #define HYPER LS(LG(LA(LCTRL)))
 #define VOICE &kp LC(LS(LA(LG(S)))) // Needs OS binding for hypr+S for Siri/Cortana/etc
@@ -91,6 +92,15 @@
         meh_tab: meh_tab_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "MEH_TAB_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
+
+        yeh_grave: yeh_grave_hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "YEH_GRAVE_HOLD_TAP";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
@@ -185,7 +195,7 @@
             bindings = <
 &kp BR_D       &kp BR_U &kp C_PREV  &kp C_NEXT  &kp C_PP                                                                                   &kp C_MUTE  &kp VDOWN   &kp VUP     VOICE &kp PAUSE_BREAK
 &kp EQUAL      &kp N1   &kp N2      &kp N3      &kp N4      &kp N5                                                                     &kp N6  &kp N7  &kp N8      &kp N9      &kp N0      &kp MINUS
-&kp GRAVE      &kp SQT  &kp COMMA   &kp DOT     &kp P       &kp Y                                                                      &kp F   &kp G   &kp C       &kp R       &kp L       &kp FSLH
+&yeh_grave YEH GRAVE      &kp SQT  &kp COMMA   &kp DOT     &kp P       &kp Y                                                                      &kp F   &kp G   &kp C       &kp R       &kp L       &kp FSLH
 &meh_tab MEH TAB &hml LCTRL A  &hml LALT O &hml LGUI E &hml LSHFT U  &kp I                                                           &kp D   &hmr RSHFT H  &hmr RGUI T   &hmr RALT N   &hmr LCTRL S &kp BSLH
 &hyper_caps HYPER CAPS       &kp SEMI &kp Q       &kp J       &kp K       &kp X   &kp LBKT &kp LPAR &layer_td     &sk RSHFT &kp RPAR    &kp RBKT     &kp B   &kp M   &kp W       &kp V       &kp Z       &kp PG_UP
 &magic MAGIC 0 &kp HOME &sk LSHFT   &kp DOWN    &kp UP              &kp REM  &kp BSPC &kp DEL       &kp ESC   &kp SPACE   &kp RET             &kp LEFT &kp RIGHT   &sk RSHFT   &kp END     &kp PG_DN
