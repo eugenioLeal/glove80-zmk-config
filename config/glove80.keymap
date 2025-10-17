@@ -79,6 +79,10 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
+        hyper_caps: hyper_capslock_hold_tap {
+            compatible: "zmk,behavior-hold-tap";
+        };
+
         hml: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_POSITIONAL_HOLD_TAP";
@@ -91,6 +95,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;    // <---[[right-hand keys]]
             hold-trigger-on-release;
         };
+
         hmr: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_POSITIONAL_HOLD_TAP";
