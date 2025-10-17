@@ -81,6 +81,10 @@
 
         hyper_caps: hyper_capslock_hold_tap {
             compatible: "zmk,behavior-hold-tap";
+            label = "HYPER_CAPSLOCK_HOLD_TAP";
+            #binding-cells = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp A>, <&kp B>;
         };
 
         hml: left_hand_positional_hold_tap {
