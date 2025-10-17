@@ -79,6 +79,15 @@
             bindings = <&mo>, <&rgb_ug_status_macro>;
         };
 
+        magic_two: magic_hold_tap_two {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MAGIC_HOLD_TAP_TWO";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&rgb_ug_status_macro>;
+        };
+
         hml: left_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "LEFT_POSITIONAL_HOLD_TAP";
@@ -91,7 +100,7 @@
             hold-trigger-key-positions = <KEYS_R THUMBS>;    // <---[[right-hand keys]]
             hold-trigger-on-release;
         };
-        
+
         hmr: right_hand_positional_hold_tap {
             compatible = "zmk,behavior-hold-tap";
             label = "RIGHT_POSITIONAL_HOLD_TAP";
